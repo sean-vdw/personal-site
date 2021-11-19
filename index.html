@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sean van der Wal's Personal Site</title>
+  <meta name="description" content="The collective online presence of a software engineer, builder, and investor.">
+  <meta name="author" content="Sean van der Wal">
+
+  <meta property="og:title" content="Sean van der Wal's Personal Site">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vanderwal.dev/">
+  <meta property="og:description" content="The collective online presence of a software engineer, builder, and investor.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/da940b72cf.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="hero-container">
+            <img src="/assets/Logo.png" alt="SVDW Logo" class="logo-main layer" data-speed="2">
+            <p class="hero-description layer" data-speed="2">Software Engineer. Builder. Investor.</p>
+            <div class="icons-container layer" data-speed="2">
+                <a href="https://github.com/sean-vdw" target="_blank">
+                    <div class="icon github"><i class="fab fa-github fa-5x"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/seanvanderwal/" target="_blank">
+                    <div class="icon linkedin"><i class="fab fa-linkedin fa-5x"></i></div>
+                </a>
+                <a href="mailto:sean@drawingcapital.com">
+                    <div class="icon email"><i class="fas fa-envelope fa-5x"></i></div>
+                </a>
+                <a href="https://angel.co/u/sean-van-der-wal-1" target="_blank">
+                    <div class="icon angellist"><i class="fab fa-angellist fa-5x"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<script type="text/javascript">
+    document.addEventListener('mousemove', parallax);
+    function parallax(e) {
+        this.querySelectorAll('.layer').forEach(layer => {
+            const speed = layer.getAttribute('data-speed');
+            const x = (window.innerWidth - e.pageX * speed)/100;
+            const y = (window.innerHeight - e.pageY * speed)/100;
+            layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+    }
+</script>
+</body>
