@@ -124,3 +124,60 @@ p, span {
     background: linear-gradient(325.29deg, #316879 12.54%, #E8F5C8 77.88%);
     box-shadow: 0px 0px 50px 25px rgba(49, 104, 121, 0.33);
 }
+
+
+
+/*  RESPONSIVE */
+
+@media (max-width: 1250px) {
+    .hero-container {
+        width: 100%;
+    }
+
+    .icons-container {
+        width: 45%;
+    }
+
+    .hero-description {
+        margin-bottom: 1%;
+    }
+}
+
+@media (max-width: 915px) {
+    .icons-container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 620px) {
+    .icons-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 515px) {
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo-main {
+        width: 65%;
+    }
+
+    .hero-description {
+        font-size: 1.6rem;
+    }
+
+    .icons-container {
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    .icon {
+        width: 75px;
+        height: 75px;
+    }
+}
