@@ -84,7 +84,7 @@ p, span {
 }
 
 .icons-container {
-    width: 65%;
+    width: 45%;
     margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +133,18 @@ p, span {
 
 
 /*  RESPONSIVE */
+
+@media (max-width: 1830px) {
+    .icons-container {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .icons-container {
+        width: 65%;
+    }
+}
 
 @media (max-width: 1250px) {
     .hero-container {
