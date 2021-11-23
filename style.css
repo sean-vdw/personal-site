@@ -84,7 +84,7 @@ p, span {
 }
 
 .icons-container {
-    width: 85%;
+    width: 65%;
     margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
@@ -100,9 +100,14 @@ p, span {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    width: 90px;
-    height: 90px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
+    transition: 0.15s;
+}
+
+.icon:hover {
+    transform: scale(1.07);
 }
 
 .icon.github {
@@ -131,7 +136,7 @@ p, span {
 
 @media (max-width: 1250px) {
     .hero-container {
-        width: 100%;
+        width: 80%;
     }
 
     .icons-container {
@@ -145,20 +150,19 @@ p, span {
 
 @media (max-width: 915px) {
     .icons-container {
-        width: 65%;
+        width: 55%;
+    }
+}
+
+@media (max-width: 775px) {
+    .icons-container {
+        width: 70%;
     }
 }
 
 @media (max-width: 620px) {
     .icons-container {
         width: 80%;
-    }
-}
-
-@media (max-width: 515px) {
-    .icon {
-        width: 80px;
-        height: 80px;
     }
 }
 
@@ -177,7 +181,8 @@ p, span {
     }
 
     .icon {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
     }
+
 }
