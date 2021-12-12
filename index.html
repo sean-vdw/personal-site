@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/da940b72cf.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" href="index.js" defer></script>
 
 </head>
 
@@ -52,17 +53,16 @@
     </div>
 </header>
 
-
-
 <script type="text/javascript">
     document.addEventListener('mousemove', parallax);
-    function parallax(e) {
-        this.querySelectorAll('.layer').forEach(layer => {
-            const speed = layer.getAttribute('data-speed');
-            const x = (window.innerWidth - e.pageX * speed)/100;
-            const y = (window.innerHeight - e.pageY * speed)/100;
-            layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        });
-    }
+        function parallax(e) {
+            document.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed');
+                const x = (window.innerWidth - e.pageX * speed)/100;
+                const y = (window.innerHeight - e.pageY * speed)/100;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
 </script>
+
 </body>

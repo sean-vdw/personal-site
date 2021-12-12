@@ -53,7 +53,6 @@ p, span {
 }
 
 /* HEADER */
-
 .header-container {
     width: 100%;
     height: 100vh;
@@ -99,18 +98,86 @@ p, span {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    background: #333;
+    color: #666;
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    transition: 0.15s;
+    transition: 0.5s;
 }
 
-.icon:hover {
-    transform: scale(1.07);
+.icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
 }
 
-.icon.github {
+.icon.github:hover::before {
+  transform: scale(1.1);
+}
+
+.github::before {
+  background: #6e5494;
+}
+
+.github:hover::before {
+  box-shadow: 0 0 15px #6e5494;
+}
+
+.github:hover {
+  color: #6e5494;
+  box-shadow: 0 0 15px #6e5494;
+  text-shadow: 0 0 15px #6e5494;
+}
+
+.linkedin::before {
+  background: #0e76a8;
+}
+
+.linkedin:hover::before {
+  box-shadow: 0 0 15px #0e76a8;
+}
+
+.linkedin:hover {
+  color: #0e76a8;
+  box-shadow: 0 0 15px #0e76a8;
+  text-shadow: 0 0 15px #0e76a8;
+}
+
+.email::before {
+  background: #FFD580;
+}
+
+.email:hover::before {
+  box-shadow: 0 0 15px #FFD580;
+}
+
+.email:hover {
+  color: #FFD580;
+  box-shadow: 0 0 15px #FFD580;
+  text-shadow: 0 0 15px #FFD580;
+}
+
+.angellist::before {
+  background: #ffffff;
+}
+
+.angellist:hover::before {
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.angellist:hover {
+  color: #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #ffffff;
+}
+
+/* .icon.github {
     background: linear-gradient(152.68deg, #E3FF73 8.52%, #E27C39 75.08%);
     box-shadow: 0px 0px 50px 25px rgba(226, 124, 57, 0.33);
 }
@@ -128,9 +195,7 @@ p, span {
 .icon.angellist {
     background: linear-gradient(325.29deg, #316879 12.54%, #E8F5C8 77.88%);
     box-shadow: 0px 0px 50px 25px rgba(49, 104, 121, 0.33);
-}
-
-
+} */
 
 /*  RESPONSIVE */
 
